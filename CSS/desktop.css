@@ -80,6 +80,7 @@ color:black;
   background-color: #f6f6f6;
   border-radius: 30px 30px 0px 0px;
   padding: 10px;
+  overflow: overlay;
 
 
 }
@@ -117,13 +118,14 @@ section
 }
 .CONTAINER
 {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 article
 {
   background-color:white ;
   border-radius: 15px;
-  padding: 10px
+  padding: 10px;
+  margin-bottom:13px;
 
 }
 
@@ -140,4 +142,16 @@ article
 .PRIX
 {
   font-weight: bold;
+}
+
+img
+{
+  width: 100%;
+  object-fit: cover;
+
+}
+
+#BANDEROLE
+{
+  height: 13em;
 }
