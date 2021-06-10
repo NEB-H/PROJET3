@@ -10,12 +10,16 @@
   <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="CSS/desktop.css">      
+  <link rel="stylesheet" href="CSS/main.css">      
   <link rel="stylesheet" media="all and (max-width: 768px)" href="CSS/tablette.css">
   <link rel="stylesheet" media="all and (max-width: 425px)" href="CSS/phone.css">
 </head>
 <body>
-
+    <div class="loader">
+      <img class="logo" src=" images/logo/ohmyfood@2x.svg" alt= "Logo"/> 
+      <div class="loader loader__animation">        
+      </div>
+    </div>
     <header>
        <img class="logo" src=" images/logo/ohmyfood@2x.svg" alt= "Logo"/>  
     </header>
@@ -24,9 +28,12 @@
       <section>
         
         <!--BARRE DE RECHERCHE-->
-        <input class="saisie" type="text" name="ville" placeholder="Paris,Belleville">
+        <div class="loc" >
+          <i class="fa-map-marker-alt fas local__icon" aria-hidden="true"></i>
+          <p>Paris, Belleville</p>
+      </div>
         <!--Texte-->
-        <p>Réservez le menu qui vous convient</p>       
+        <h4>Réservez le menu qui vous convient</h4>       
         <!--Texte plus petit-->
          <SPAN class="DETAILS"> Découvrez des restaurants d'exception, sélectionnés par nos soins <br></SPAN>
         <input class="button accueil" type="button" value="Explorer les restaurants">
@@ -36,30 +43,34 @@
       <!--FONCTIONNEMENT-->  
       <section class="FONCTIONNEMENT">
         
-        <p>Fonctionnement</p>
-        <ol class="ETAPE">
+        <h4>Fonctionnement</h4>
+        <div class="ETAPE">
 
-          <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
-          <li><i class="fas fa-list-ul"></i>Composez votre menu</li>
-          <li><i class="fas fa-store"></i>Dégustez au restaurant</li>
+          <span class="fac"><i class="fas fa-mobile-alt"></i><h4>Choisissez un restaurant</h4></span>
+          <span class="fac"><i class="fas fa-list-ul"></i><h4>Composez votre menu</h4></span>
+          <span class="fac"><i class="fas fa-store"></i><h4>Dégustez au restaurant</h4></span>
         
-        </ol>
+        </div>
 
 
       </section>
       <!--Restaurant-->
       <section class="CARTE index">
-        <p>Restaurants</p>
+        <h4>Restaurants</h4>
         <div class="RESTAURANT">
           <article>
             <div class="PR">
               <img src="images/restaurants/lapalettedugout.jpg">
+           
             </div>
             <div class="infos index">               
-              <p>Nom de restaurant <br> 
+              <h4>Nom de restaurant <br> 
                 <span class="DETAILS">Adresse</span>
-              </p>
-              <a href="#"><i class="far fa-heart"></i></a>
+              </h4>
+              <div class="coeur"> 
+                <i class="card__like fa-2x fa-heart far menu__like menu__like--noBg" aria-hidden="true"></i>
+                <i class="card__like fa-2x fa-heart fas menu__like menu__like--bg" aria-hidden="true"></i> 
+              </div>
             </div>    
           </article>
           <article>
@@ -67,9 +78,9 @@
               <img src="images/restaurants/lanoteenchante.jpg">
             </div>
             <div class="infos index">               
-              <p>Nom de restaurant <br> 
+              <h4>Nom de restaurant <br> 
                 <span class="DETAILS">Adresse</span>
-              </p>
+              </h4> 
               <a href="#"><i class="far fa-heart"></i></a>
             </div>    
           </article>
@@ -78,9 +89,9 @@
               <img src="images/restaurants/alafrancaise.jpg">
             </div>
             <div class="infos index">               
-              <p>Nom de restaurant <br> 
+              <h4>Nom de restaurant <br> 
                 <span class="DETAILS">Adresse</span>
-              </p>
+              </h4>
               <a href="#"><i class="far fa-heart"></i></a>
             </div>    
           </article>
@@ -89,9 +100,9 @@
               <img src="images/restaurants/ledelicedessens.jpg">
             </div>
             <div class="infos index">               
-              <p>Nom de restaurant <br> 
+              <h4>Nom de restaurant <br> 
                 <span class="DETAILS">Adresse</span>
-              </p>
+              </h4>
               <a href="#"><i class="far fa-heart"></i></a>
             </div>    
           </article>
@@ -106,7 +117,7 @@
        <a href="#"><i class="fas fa-utensils fa-xs"></i>Proposer un restaurant</a>
        <a href="#"><i class="fas fa-hands-helping fa-xs"></i>Devenir partenaire</a>
        <a href="#">Mentions légales</a>
-       <a href="#">Contact</a>
+       <a href="mailto:xxx@yz.org">Contact</a>
       
     </footer>
 </body>

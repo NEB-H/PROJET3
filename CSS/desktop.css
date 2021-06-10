@@ -3,6 +3,15 @@ header
     display: flex;
     justify-content: center;
     padding: 5%;
+
+    img{
+      padding: 0px 30% 0px 20%; 
+      }
+
+      a{
+      align-self: center;
+      color:black;
+      }
 }
 
 footer 
@@ -13,9 +22,7 @@ footer
     padding: 20px;
     padding-bottom: 40px;
 	
-}
-
-footer img
+ img
 {
     filter: invert(1);
     width: 100px;
@@ -24,19 +31,20 @@ footer img
 
 }
 
-footer a 
+ a 
 {
     color: white;
     padding: 3px 0px;
     text-decoration: none;
 }
 
-footer i
+ i
 {
 width:15px;
 padding-right:10px;
 }
 
+}
 *
 {
     font-family: 'Roboto',sans-serif;
@@ -63,17 +71,6 @@ margin:0px 0px 5px 0px;
 padding: 10px 10px 0px 10px;
 
 }
-header img
-{
-
-
-padding: 0px 30% 0px 20%;
-}
-header a
-{
-align-self: center;
-color:black;
-}
 
 
 .CARTE
@@ -90,14 +87,11 @@ color:black;
 {
   justify-content: space-between;
   flex-direction: row;
+  a {
+    align-self: center;
+    color:#959595; 
+  }
 }
-
-#TITRE a
-{
-  align-self: center;
-  color:#959595; 
-}
-
 #COMMANDER {
     display: flex;
     justify-content: center;
@@ -193,17 +187,39 @@ text-align: center;
 
 }
 
-li
+.fac
 {
+  display: flex;
   background-color: #f6f6f6;
   margin-bottom: 25px;
   min-height: 75px;
   box-shadow: 1px 6px 14px grey;
   border-radius:15px;
-    text-align: center;
+  justify-content: center; 
+  align-items: center;
 
 }
 
 .ETAPE {
     padding: 0px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+
+.PR img
+{
+  max-height: 260px;
+}
+
+input::before
+ { 
+  content: "♥"; 
+}
+
+.saisie:before {
+    content: "\f004";
+    font-family: 'Font Awesome 5 Free'; 
 }
