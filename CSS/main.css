@@ -19,6 +19,10 @@
     position: fixed;
     width: 100%;
     height: 100%; }
+  40% {
+    opacity: 70%; }
+  80% {
+    opacity: 40%; }
   100% {
     opacity: 0%; } }
 @keyframes rot {
@@ -86,7 +90,11 @@ h3 {
 
 h4 {
   margin: 0px 0px 5px 0px;
-  padding: 10px 10px 0px 10px; }
+  padding: 10px 10px 0px 10px;
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .loc {
   display: flex;
@@ -98,7 +106,8 @@ h4 {
   background-color: #f6f6f6;
   border-radius: 30px 30px 0px 0px;
   padding: 10px;
-  overflow: overlay; }
+  overflow: overlay;
+  position: relative; }
 
 #TITRE {
   justify-content: space-between;
@@ -136,20 +145,18 @@ article {
   background-color: white;
   border-radius: 15px;
   margin-bottom: 13px;
-  overflow: hidden; }
-
-.CONTAINER article {
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   animation: slide 3s;
   box-shadow: 0 0 10px #0000002e; }
-  .CONTAINER article .DETAILS {
+  article .DETAILS {
     margin: 0px 0px 5px 0px;
     padding: 10px 10px 0px 10px; }
-  .CONTAINER article:hover .coche {
+  article:hover .coche {
     animation: app 0.35s linear;
     display: inherit; }
-  .CONTAINER article:hover i {
+  article:hover i {
     animation: rot 0.5s linear; }
 
 .infos {
