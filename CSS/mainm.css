@@ -91,24 +91,17 @@ h3 {
   font-size: initial;
   position: relative; }
 
-h4 {
-  margin: 0px 0px 5px 0px;
-  padding: 10px 10px 0px 10px;
-  text-decoration: none; }
+.CONTAINER ARTICLE h4 {
+  width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .loc {
   display: flex;
   justify-content: center;
   background-color: #ebebeb;
   padding: 5px; }
-
-.local {
-  font-size: xx-large;
-  text-align: center; }
-
-.local1 {
-  font-size: xx-large;
-  margin: 25px; }
 
 .CARTE {
   background-color: #f6f6f6;
@@ -144,14 +137,7 @@ h4 {
 
 section {
   padding-bottom: 30px;
-  background-color: #f6f6f6;
-  display: flex;
-  flex-direction: column; }
-
-.local__icon {
-  position: relative;
-  top: 15px;
-  margin-right: 10px; }
+  background-color: #f6f6f6; }
 
 .CONTAINER {
   margin-bottom: 30px; }
@@ -159,21 +145,31 @@ section {
 article {
   background-color: white;
   border-radius: 15px;
-  margin: 20px 15px;
-  overflow: hidden; }
-
-.infos_index {
+  margin-bottom: 13px;
+  overflow: hidden;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  transform: scale(0);
+  animation: slide 3s;
+  animation-fill-mode: both;
+  box-shadow: 0 0 10px #0000002e; }
+  article h4 {
+    margin: 0px 0px 5px 0px;
+    padding: 10px 10px 0px 10px; }
+
+.CONTAINER article:hover .coche {
+  animation: app 0.35s linear;
+  display: inherit; }
+.CONTAINER article:hover i {
+  animation: rot 0.5s linear; }
+
+.infos {
+  width: 90%;
+  padding: 0px 10px 10px 10px; }
 
 .DETAILS {
   color: grey;
-  margin: 10px;
-  text-align: center; }
-
-.DETAILSR {
-  color: grey;
-  text-align: center; }
+  margin: 0px 10px; }
 
 .PRIX {
   font-weight: bold;
@@ -205,9 +201,7 @@ img {
   background-color: white; }
 
 .index {
-  border-radius: 0px;
-  display: flex;
-  justify-content: space-between; }
+  border-radius: 0px; }
 
 .fac {
   display: flex;

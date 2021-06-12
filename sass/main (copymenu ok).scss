@@ -140,30 +140,24 @@ h3
 
 }
 
-h4 {
-    margin: 0px 0px 5px 0px;
-    padding: 10px 10px 0px 10px;
-    text-decoration: none;
+
+.CONTAINER ARTICLE  h4
+{
+width: 120px;
+white-space: nowrap;
+overflow: hidden; 
+text-overflow: ellipsis;
+
 }
 
 .loc
  {
   display: flex;
   justify-content: center;
+
   background-color: #ebebeb;
   padding: 5px;
-   
 }
-.local {     font-size: xx-large;
-              text-align: center;
-
-       }
-
-       .local1 {     font-size: xx-large;
-        margin: 25px;
-        
- }
-
 
 .CARTE
 {
@@ -206,17 +200,10 @@ display: flex;
 
 section
 {   
-     padding-bottom: 30px;
-     background-color: #f6f6f6;
-     display: flex;
-     flex-direction: column;
-}
+  padding-bottom: 30px;
+   background-color: #f6f6f6;
    
-.local__icon{
-
-position: relative;
-top: 15px;
-margin-right: 10px;
+   
 }
 
 .CONTAINER
@@ -227,15 +214,42 @@ article
 {
   background-color:white ;
   border-radius: 15px;
-  margin:20px 15px;
+  margin-bottom:13px;
   overflow: hidden;
+
+
+  display: flex;
+  justify-content: space-between;
+  transform: scale(0);
+  animation: slide 3s;  
+  animation-fill-mode: both;
+  box-shadow: 0 0 10px #0000002e;
+
+      h4 {
+
+               margin: 0px 0px 5px 0px;
+               padding: 10px 10px 0px 10px;
+            }
+          }
+  .CONTAINER article{              
+  &:hover{
+        
+       .coche{animation: app 0.35s linear ;
+        display: inherit;}
+       i{
+        animation: rot 0.5s linear ;}  
+        
+        }
+        
+    
+
 
 }
 
-.infos_index {
+.infos {
   
-  display: flex;
-  justify-content: space-between;
+  width: 90%;
+  padding: 0px 10px 10px 10px;
 }
 
 
@@ -244,15 +258,7 @@ article
 .DETAILS  
 {
   color: grey;
-  margin: 10px;
-  text-align: center;
-}
-
-.DETAILSR
-{
-
-  color: grey;
-  text-align: center;
+  margin: 0px 10px;
 }
 
 .PRIX
@@ -301,8 +307,6 @@ text-align: center;
   .index
 {
   border-radius: 0px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .fac
