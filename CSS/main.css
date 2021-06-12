@@ -90,9 +90,7 @@ h3 {
   font-size: initial;
   position: relative; }
 
-h4 {
-  margin: 0px 0px 5px 0px;
-  padding: 10px 10px 0px 10px;
+.CONTAINER ARTICLE h4 {
   width: 100px;
   white-space: nowrap;
   overflow: hidden;
@@ -154,14 +152,15 @@ article {
   animation: slide 3s;
   animation-fill-mode: both;
   box-shadow: 0 0 10px #0000002e; }
-  article .DETAILS {
+  article h4 {
     margin: 0px 0px 5px 0px;
     padding: 10px 10px 0px 10px; }
-  article:hover .coche {
-    animation: app 0.35s linear;
-    display: inherit; }
-  article:hover i {
-    animation: rot 0.5s linear; }
+
+.CONTAINER article:hover .coche {
+  animation: app 0.35s linear;
+  display: inherit; }
+.CONTAINER article:hover i {
+  animation: rot 0.5s linear; }
 
 .infos {
   width: 90%;
@@ -253,8 +252,7 @@ img {
 
 .coche {
   background-color: #99e2d0;
-  width: 10%;
-  height: 61px;
+  height: 63px;
   display: none; }
   .coche i {
     color: #99e2d0;
@@ -274,5 +272,18 @@ img {
 
 .delay_4 {
   animation-delay: 1.5s; }
+
+.coeur {
+  margin: 15px 50px; }
+  .coeur i {
+    transition: 0.5s;
+    color: #be64db; }
+  .coeur .far {
+    position: absolute; }
+  .coeur .fas {
+    position: absolute;
+    opacity: 0; }
+  .coeur:hover .fas {
+    opacity: 100%; }
 
 /*# sourceMappingURL=main.css.map */

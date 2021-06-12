@@ -139,11 +139,9 @@ h3
 
 }
 
-h4
-{
 
-margin:0px 0px 5px 0px;
-padding: 10px 10px 0px 10px;
+.CONTAINER ARTICLE  h4
+{
 width: 100px;
 white-space: nowrap;
 overflow: hidden; 
@@ -187,7 +185,7 @@ display: flex;
 {
   border-radius: 30px;
   color:white;
-   background: linear-gradient(174deg,#FF79DA,#3b1e5e); 
+  background: linear-gradient(174deg,#FF79DA,#3b1e5e); 
   padding: 13px 40px;
   border: none;
   box-shadow:1px 6px 14px #3c1c1c ;
@@ -226,13 +224,13 @@ article
   animation-fill-mode: both;
   box-shadow: 0 0 10px #0000002e;
 
-    .DETAILS{
+      h4 {
 
                margin: 0px 0px 5px 0px;
                padding: 10px 10px 0px 10px;
             }
-     
-                
+          }
+  .CONTAINER article{              
   &:hover{
         
        .coche{animation: app 0.35s linear ;
@@ -377,8 +375,7 @@ text-align: center;
  .coche
  {
   background-color: #99e2d0;
-  width: 10%;
-  height: 61px;
+  height: 63px;
   display: none;
 
   
@@ -414,3 +411,21 @@ text-align: center;
 .delay_4{
   animation-delay: 1.5s;
 }
+
+.coeur {
+    margin: 15px 50px;
+
+    i { transition: 0.5s;
+        color:#be64db;
+        
+      }
+
+    .far{position:absolute;}        
+          
+    .fas{position: absolute;
+          opacity: 0;}
+    &:hover{
+              .fas {opacity: 100%;}
+           }
+} 
+
