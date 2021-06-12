@@ -92,7 +92,7 @@ h3 {
   position: relative; }
 
 .CONTAINER ARTICLE h4 {
-  width: 120px;
+
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
@@ -165,9 +165,13 @@ article {
 
 .infos {
   width: 90%;
-  padding: 0px 10px 10px 10px; }
+  padding: 0px 10px 10px 10px;
+  overflow: hidden; }
 
 .DETAILS {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: grey;
   margin: 0px 10px; }
 
